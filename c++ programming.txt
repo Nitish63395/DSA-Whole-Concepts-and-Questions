@@ -1,0 +1,4104 @@
+******************************************************
+for code to be running in desktop visual studio--
+ g++ loop.cpp   -------compiling
+ ./a           ----------run
+
+
+
+
+
+
+
+
+********************************************************
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    /*int n;
+    cin>>n;
+    //cout<<"hello"<<endl;
+   // cout<<"value of n is:"<<n<<endl;
+   if(n>0)
+   {
+    cout<<"n is positive"<<endl;
+
+   }
+   else{
+    cout<<"n is negative"<<endl;
+   }
+   */
+ //
+ /* int a,b;
+ // cin>>a>>b;
+  //cout<<"value of a and b is"<<a<<" "<<b<<endl;
+  a=cin.get();//taking space as input
+  cout<<"value of a is:"<<a<<endl;
+
+}*/
+/*int a,b;
+cout<<"Enter the value of a:"<<endl;
+cin>>a;
+cout<<"Enter the value of b:"<<endl;
+cin>>b;
+if(a>b){
+    cout<<"a is greater then b"<<endl;
+}
+else{
+    cout<<"b is greater than a"<<endl;
+}
+}*/
+/*int main()
+{
+   int a;
+cout<<"Enter the value of a:"<<endl;
+cin>>a;
+if(a>0){
+    cout<<"a is positive"<<endl;
+}
+else{
+    if(a<0){
+        cout<<"a is negative"<<endl;
+    }
+  else{
+      cout<<"a is 0"<<endl;
+  }
+}
+}*/
+/*int main(){
+    int a;
+    cout<<"Enter the value"<<endl;
+    cin>>a;
+    if(a>0)
+    {
+        cout<<"a is positive"<<endl;
+    }
+    else if(a<0){
+        cout<<"a is negative"<<endl;
+    
+    }
+    else{
+        cout<<"a is 0"<<endl;
+    }*/
+    /*
+    int main(){
+        int n;
+        cin>>n;
+        int i=1;
+        while(i<=n){
+            cout<<i<<" ";
+            i=i+1;
+        }
+        int main(){
+        int n;
+        cin>>n;
+        int i=1;
+        int sum=0;
+        while(i<=n)
+        {
+            sum=sum+i;
+            i=i+1;
+        }
+        cout<<"sum is:"<<sum<<endl;
+
+    }
+    int main(){
+      int n;
+      cin>>n;
+      int i=2;
+      while(i<n)
+      {
+         if(n%i==0){
+             
+         
+          cout<<"not prime for"<<i<<endl;
+      }
+      else{
+          cout<<"prime for"<<i<<endl;
+      }
+      i=i+1;
+ }
+ }//pattern ***
+
+ int main(){
+     int n;
+     cin>>n;
+     int i=1;
+     while(i<=n)
+     {
+         int j=1;
+         while(j<=n){
+         cout<<"*";
+         j=j+1;
+     }
+     cout<<endl;
+     i=i+1;
+ }
+ //Pattern1111
+          2222
+
+ -----       
+ int main(){
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n)
+    {
+        int j=1;
+        while(j<=n){
+            cout<<i;
+            j=j+1;
+            
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+   ---- pattern 123
+                123
+    
+    #include <iostream>
+
+using namespace std;
+
+ int main(){
+   int n;
+   cin>>n;
+   int i=1;
+   
+   while(i<=n)
+   {
+       int j=1;
+       while(j<=n){
+           cout<<n-j+1;or only n
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+   }
+ }
+
+ ----counting pattern
+  1 2 3 4
+  5 6 7 8
+
+  ---
+  int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    int count=1;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+        cout<<count<<" ";
+        count=count+1;
+        j=j+1;
+    }
+    cout<<endl;
+    i=i+1;
+}
+}
+----pattern 
+*
+**
+***
+****
+---
+int main()
+{
+   int n;
+   cin>>n;
+   int row=1;
+   while(row<=n){
+       int col=1;
+       while(col<=row){
+           cout<<"*";
+           col=col+1;
+       }
+       cout<<endl;
+       row=row+1;
+       
+   }
+}
+---pattern
+1
+22
+333
+4444
+55555
+----
+int main()
+{
+   int n;
+   cin>>n;
+   int row=1;
+   while(row<=n){
+       int col=1;
+       while(col<=row){
+           cout<<row;
+           col=col+1;
+       }
+       cout<<endl;
+       row=row+1;
+       
+   }
+}
+---pattern
+1
+2 3
+4 5 6
+7 8 9 10
+----
+ 
+   int n;
+   cin>>n;
+   int row=1;
+   int count=1;
+   while(row<=n){
+       int col=1;
+       while(col<=row){
+           cout<<count<<" ";
+           count=count+1;
+           col=col+1;
+       }
+       cout<<endl;
+       row=row+1;
+       
+   }
+   ---pattern
+   1
+   23
+   345
+   ----
+     int n;
+    cin>>n;
+    int row=1;
+    while(row<=n){
+        int col=1;
+        int value=row;
+        while(col<=row){
+            cout<<value;
+            value=value+1;
+            col=col+1;
+            
+        }
+        cout<<endl;
+        row=row+1;
+
+        --- pattern
+        1
+        2 1
+        3 2 1
+        4 3 2 1
+        ----
+         int n;
+   cin>>n;
+   int i=1;
+   while(i<=n)
+   {
+       int j=1;
+       while(j<=i)
+       {
+           cout<<i-j+1<<" ";
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+   }
+}
+--pattern
+AAA
+BBB
+CCC
+int n;
+   cin>>n;
+   int i=1;
+   while(i<=n)
+   {
+       int j=1;
+       while(j<=n)
+       {
+           char ch='A'+i-1;
+           cout<ch;
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+   }
+}
+-----pattern
+        *
+      * *
+    * * *
+     int n;
+  cin>>n;
+  int row=1;
+  while(row<=n)
+  {
+    //print space
+      int space=n-row;
+      while(space){
+          cout<<" ";
+          space=space-1;
+      }
+      //print *
+      int col=1;
+      while(col<=row){
+          cout<<"*";
+          col=col+1;
+      }
+      cout<<endl;
+      row=row+1;
+  }
+}
+
+---- 
+
+
+        
+    }
+    ---bitwise operator
+
+    *****************#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a=4;
+    int b=6;
+    
+    cout<<"a&b "<<(a&b)<<endl;
+    cout<<"a|b "<<(a|b)<<endl;
+    cout<<"~a "<<~a<<endl;
+    cout<<"a^b "<<(a^b)<<endl;
+    
+}
+---left shift, right shift operator;
+
+using namespace std;
+
+int main() {
+    cout<< (17>>1)<<endl;
+    cout<< (17>>2)<<endl;
+    cout<< (19<<1)<<endl;
+    cout<< (21<<2)<<endl;
+    }
+    -----for loop------
+    Example----
+    #include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"enter the value of n"<<endl;
+    cin>>n;
+    cout<<"printing count from 1 to n"<<endl;
+    for(int i=1;i<=n;i++){
+        cout<<i<<endl;
+    }
+    
+    
+}
+----sum using for loop---
+int main()
+{
+    int n;
+    cout<<"enter the value of n"<<endl;
+    cin>>n;
+    int sum=0;
+    for(int i=0;i<=n;i++){
+        sum+=i;
+        
+    }
+    cout<<sum<<endl;
+    
+    }
+    }
+    -----fibonacci number------
+    #include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n=10;
+   int a=0;
+   int b=1;
+   cout<<a<<" "<<b<<" ";
+   for(int i=1;i<=n;i++){
+       int nextNumber=a+b;
+       cout<<nextNumber<<" ";
+       
+       a=b;
+       b=nextNumber;
+   }
+    
+    
+}
+-----prime----
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter the value for n ";
+    cin>>n;
+    bool isprime=1;
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            isprime=0;
+            break;
+        }
+    }
+        if(isprime==0){
+            cout<<"not prime";
+        }
+        else{
+            cout<<"prime";
+        }
+    
+    }
+    
+------switch case----
+    #include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char ch='1';
+    int num=1;
+    cout<<endl;
+    switch(ch){
+        case 1:cout<<"First"<<endl;
+               cout<<"First again"<<endl;
+               break;
+    }
+    case '1': switch(num){
+        case 1:cout<<"value of num is"<<num<<endl;
+        break;
+    }
+    break;
+    default:cout<<"It is default case"<<endl;
+    }
+    cout<<endl;
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    int b;
+    cout<<"Enter the value for a"<<endl;
+    cin>>a;
+    cout<<"Enter the value for b"<<endl;
+    cin>>b;
+    char op;
+    cout<<"Enter the value for op"<<endl;
+    cin>>op;
+    switch(op) {
+        case '+':cout<<a+b<<endl;
+        break;
+        case '-':cout<<a-b<<endl;
+        break;
+        case '*':cout<<a*b<<endl;
+        break;
+        case'/':cout<<a/b<<endl;
+        break;
+        case '%':cout<<a%b<<endl;
+        break;
+       default:
+       cout<<"nothing";
+    } 
+    -----experiment----
+
+int main()
+{
+    int r;
+    cout<<"Enter the amount"<<endl;
+    cin>>r;
+
+   int x=100;
+   int y=50;
+   int z=20;
+   int f=10;
+   char op;
+   cout<<"Enter the note to know the no. of its"<<endl;
+   cin>>op;
+   switch(op){
+       case 'hund':
+       cout<<q=r/x;
+       break;
+       case'fifty':
+       cout<<u=r/y;
+       break;
+       case'twenty':
+       cout<<e=r/z;
+       break;
+       case'ten':
+       cout<<a=r/f;
+       break;
+       default:
+       cout<<"nothing";
+       
+       
+   }
+   
+}
+
+}
+------------------function-----------------------
+#include<iostream>
+using namespace std;
+
+//Function Signature
+void printCounting(int num) {
+
+//    cout << n << endl;
+    //Function Body 
+    for(int i=1; i<=num; i++) {
+        cout<< i << " ";
+    }
+    cout<<endl;
+}
+
+int main() {
+
+    int n;
+    cin >> n;
+
+    //function Call
+    printCounting(n);
+
+
+    return 0;
+}
+
+
+-----------------even/odd---------------
+#include<iostream>
+using namespace std;
+
+bool iseven(int a){
+    if(a&1){
+        return 0;
+    }
+    else{
+        return 1;
+    }
+}
+int main(){
+    int num;
+    cin>>num;
+    if(iseven(num)){
+        cout<<"number is even";
+    }
+    else{
+        cout<<"number is odd";
+    }
+    return 0;
+}
+
+---------power----------
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    // pow(a,b)
+
+    int a , b;
+
+    cin >> a >> b;
+
+    int ans = 1;
+
+    for(int i = 1; i<=b; i++) {
+        ans = ans * a;
+    }
+
+    cout<<" answer is " << ans <<endl;
+
+
+    int c , d;
+
+    cin >> c >> d;
+
+    ans = 1;
+
+    for(int i = 1; i<=d; i++) {
+        ans = ans * c;
+    }
+
+    cout<<" answer is " << ans <<endl;
+
+    int e , f;
+
+    cin >> e >> f;
+
+    ans = 1;
+
+    for(int i = 1; i<=f; i++) {
+        ans = ans * e;
+    }
+
+    cout<<" answer is " << ans <<endl;
+
+
+    return 0;
+}
+----------------------ncr-------------
+#include<iostream>
+using namespace std;
+
+int factorial(int n){
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+        
+    }
+    return fact;
+}
+int ncr(int n, int r){
+    int num=factorial(n);
+    int denom=factorial(r)*factorial(n-r);
+    return num/denom;
+}
+int main()
+{
+    int n,r;
+    cin>>n>>r;
+    cout<<"Answer is "<<ncr(n,r)<<endl;
+    return 0;
+}
+
+================prime number===============
+
+#include<iostream>
+using namespace std;
+// 0 -> Not a Prime no.
+// 1 -> Prime no.
+
+bool isPrime(int n ) {
+   for(int i = 2; i < n; i++){
+       if(n % i == 0) {
+       //divide hogya h , not a prime no.
+          return 0;
+        }
+   }
+   return 1;
+}
+
+int main() {
+   
+   int n ;
+   cin >> n;
+   if(isPrime(n)) {
+        cout <<" is a Prime number " <<endl;
+   }
+   else{
+       cout<< "Not a prime number "<<endl;
+
+   }
+}
+----------------power------------
+
+#include<iostream>
+using namespace std;
+
+int power(int num1, int num2) {
+    
+    //cout << a <<endl;
+
+    int ans = 1;
+
+    for(int i = 1; i <= num2; i++) {
+        ans = ans * num1;
+    }
+
+    return ans;
+}
+int main()
+{
+    int c , d;
+    cin>> c >> d;
+
+    int answer = power(c,d);
+    cout << " answer is " << answer << endl;
+
+    return 0;
+}
+
+----------------call by value----------------
+
+#include<iostream>
+using namespace std;
+void dummy(int n){
+    n++;
+    cout<<n<<endl;
+    
+}
+
+int main(){
+    int n;
+    cin>>n;
+    dummy(n);
+    cout<<n<<endl;
+    
+    
+    return 0;
+}
+
+===================================ARRAY========================
+
+#include<iostream>
+using namespace std;
+void printArray(int arr[],int size){
+     cout<<"printing the array"<<endl;
+    //print the array
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+}
+int main(){
+    //declare
+    int number[15];
+    //accessing an array
+    //cout<<number[0];
+    //cout<<number[20];
+    //initialising the array
+    int sec[3]={2,3,6};
+   // cout<<"value at index 2"<<sec[2]<<endl;
+  /*  cout<<"All value"<<sec[0]<<endl;
+    //accesing the all element
+    int third[15]={2,7};
+    int n=4;
+    //int n=15
+    for(int i=0;i<=n;i++){
+        cout<<third[i]<<" ";
+    }
+    //initialising with 1 for all element is not possible with with the below method;
+     int arr[15]={1};
+    int n=14;
+    //print the array
+    for(int i=0;i<=n;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+    */
+    //initialising all location with  0
+   /*
+    int array[15]={0};
+    printArray(array,5);
+    //int n=14;
+    //print the array
+    //for(int i=0;i<=n;i++){
+    //    cout<<arr[i]<<" ";
+    //}
+    cout<<endl<<"All is well hgjjk gfjygjy yuyhuhui tfytt"<<endl;
+    return 0;
+}
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include<iostream>
+using namespace std;
+void printArray(int arr[],int size){
+     cout<<"printing the array"<<endl;
+    //print the array
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+}
+int main(){
+    //declare
+    int number[15];
+    //accessing an array
+    //cout<<number[0];
+    //cout<<number[20];
+    //initialising the array
+    int sec[3]={2,3,6};
+   // cout<<"value at index 2"<<sec[2]<<endl;
+  /*  cout<<"All value"<<sec[0]<<endl;
+    //accesing the all element
+    int third[15]={2,7};
+    //int n=4;
+    //int n=15
+    for(int i=0;i<=n;i++){
+        cout<<third[i]<<" ";
+    }
+     int third[15]={2,7};
+    printArray(third,14);
+    int thirdsize=sizeof(third)/size of(int);
+    cout<<"size of third is"<<thirdsize<<endl;
+     
+   
+    }
+    //initialising with 1 for all element is not possible with the below method;
+     int arr[15]={1};
+    int n=14;
+    //print the array
+    for(int i=0;i<=n;i++){
+        cout<<arr[i]<<" ";
+    }
+    char ch[5]={'q','y','a','r','g'};
+    cout<<ch[4]<<endl;
+    cout<<" Printing the array"<<endl;
+    for(int i=0;i<5;i++){
+        cout<<ch[i]<<" ";
+    }
+    double firstdouble[5];
+    float firstfloat[9];
+    bool firstBool[9];
+    
+    */
+    //initialising all location with  0
+   /* int array[15]={0};
+    printArray(array,5);
+    //int n=14;
+    //print the array
+    //for(int i=0;i<=n;i++){
+    //    cout<<arr[i]<<" ";
+    //}
+    cout<<endl<<"All is well hgjjk gfjygjy yuyhuhui tfytt"<<endl;
+    return 0;
+    ===========================max and minimun===================
+
+
+#include<iostream>
+#include<climits>
+using namespace std;
+int getMax(int num[],int n){
+    int max=INT_MIN;
+    for(int i=0;i<n;i++){
+        if(num[i]>max){
+            max=num[i];
+        }
+    }
+    //returing max value
+    return max;
+    
+}
+int getMin(int num[],int n){
+    int min=INT_MAX;
+    for(int i=0;i<n;i++){
+        if(num[i]<min){
+            min=num[i];
+            //or
+            maxi=max(maxi,num[i]);
+        }
+    }
+    //returing min value
+    return min;
+    
+}
+int main(){
+    int size;
+    cin>>size;
+    int num[100];
+    for(int i=0;i<size;i++){
+        cin>>num[i];
+    }
+    cout<<"Maximun value is "<<getMax(num,size)<<endl;
+    cout<<"Minimum value is "<<getMin(num,size)<<endl;
+    
+}
+}
+========================scope-scope=======================
+#include <iostream>
+
+using namespace std;
+void update(int arr[],int n){
+    cout<<endl<<"Inside the function"<<endl;
+    
+    //updating array's first element
+    arr[0]=120;
+    
+    //printing the array
+    for(int i=0;i<3;i++){
+        cout<<arr[i]<<" ";
+    }cout<<endl;
+    cout<<"Going back to main funcrion"<<endl;
+}
+
+int main()
+{
+   int arr[3]={1,2,3};
+   update(arr,3);
+   //printing the array
+   cout<<endl<<"Printing the main function"<<endl;
+   for(int i=0;i<3;i++){
+       cout<<arr[i]<<" ";
+   }
+   cout<<endl;
+   
+   
+    return 0;
+}
+=======================sum of input array=======================
+#include<iostream>
+#include<climits>
+using namespace std;
+int sumArr(int num[],int n){
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+num[i];
+    }
+    return sum;
+}
+int main(){
+    int size;
+    cin>>size;
+    int num[100];
+    for(int i=0;i<size;i++){
+        cin>>num[i];
+    }
+    cout<<"sum is"<<sumArr(num,size);
+}
+===============================linear search===========================
+#include<iostream>
+using namespace std;
+bool search(int arr[],int size,int key){
+    for(int i=0;i<size;i++){
+        if(arr[i]==key){
+            return 1;
+        }
+    }
+    return 0;
+}
+int main(){
+    int arr[10]={2,1,5,-5,0,3,9,8,23,11};
+    cout<<"Enter the element to search for"<<endl;
+    int key;
+    cin>>key;
+    bool found=search(arr,10,key);
+    if(found){
+        cout<<"key is present"<<endl;
+    }
+    else{
+        cout<<"Key is not present"<<endl;
+    }
+}
+======================reverse an array================
+#include<iostream>
+using namespace std;
+void reverse(int arr[],int n){
+    int start=0;
+    int end=n-1;
+    while(start<=end){
+        swap(arr[start],arr[end]);
+        start++;
+        end--;
+    }
+}
+void printArray(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+    int arr[6]={1,4,6,3,9,10};
+    int brr[5]={2,8,-4,33,11};
+    
+    reverse(arr,6);
+    reverse(brr,5);
+    
+    printArray(arr,6);
+    printArray(brr,5);
+}
+
+==========================swap alternate wala================================
+#include<iostream>
+using namespace std;
+void altswap(int arr[],int n){
+    for(int i=0;i<n;i=i+2){
+        if(i+1<n){
+            swap(arr[i],arr[i+1]);
+        
+        }
+    }
+}
+void printArray(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
+}
+int main(){
+    int arr[6]={2,5,1,8,4,9};
+    altswap(arr,6);
+    printArray(arr,6);
+}
+=========================sort 0 1 ==============================
+
+#include<iostream>
+using namespace std;
+void printArray(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+void sortArray(int arr[],int n){
+   int i=0;
+   int j=n-1;
+   while(i<j){
+       if((arr[i]==0) && (i<j)){
+           i++;
+       }
+       else if((arr[j]==1)&& (i<j)){
+           j--;
+       }
+       else if((arr[i]==1)&&(arr[j]==0)){
+           swap(arr[i],arr[j]);
+           i++;
+           j--;
+       }
+   }
+}
+int main(){
+   int arr[8]={1,1,0,0,0,0,1,0};
+    printArray(arr,8);
+   sortArray(arr,8);
+     printArray(arr,8);
+}
+
+======================binary search==================
+#include<iostream>
+using namespace std;
+int binarysearch(int arr[],int size,int key){
+    int start=0;
+    int end=size-1;
+    int mid=start+(end-start)/2;
+    while(start<=end){
+        if(arr[mid]==key){
+            return mid;
+        }
+        if(key>arr[mid]){
+            start=mid+1;
+        }
+        else{
+            end=mid-1;
+        }
+            mid=start+(end-start)/2;
+        }
+        return -1;
+    }
+
+int main(){
+    int arr1[6]={2,4,5,7,12,14};
+    int index=binarysearch(arr1,6,4);
+    cout<<"Index of 12  "<<index;
+    
+}
+
+
+===================first and last occurence==================
+#include<vector>
+using namespace std;
+int firstOcc(vector<int>& arr, int n, int key) {
+
+    int s = 0, e = n-1;
+    int mid = s + (e-s)/2;
+    int ans = -1;
+    while(s<=e) {
+
+        if(arr[mid] == key){
+            ans = mid;
+            e = mid - 1;
+        }
+        else if(key > arr[mid]) {//Right me jao
+            s = mid + 1;
+        }
+        else if(key < arr[mid]) {//left me jao
+            e = mid - 1;
+        }
+
+        mid = s + (e-s)/2;
+    }
+    return ans;
+}
+
+int lastOcc(vector<int>& arr, int n, int key) {
+
+    int s = 0, e = n-1;
+    int mid = s + (e-s)/2;
+    int ans = -1;
+    while(s<=e) {
+
+        if(arr[mid] == key){
+            ans = mid;
+            s = mid + 1;
+        }
+        else if(key > arr[mid]) {//Right me jao
+            s = mid + 1;
+        }
+        else if(key < arr[mid]) {//left me jao
+            e = mid - 1;
+        }
+
+        mid = s + (e-s)/2;
+    }
+    return ans;
+}
+
+pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
+{
+    pair<int,int> p;
+    p.first = firstOcc(arr, n, k);
+    p.second = lastOcc(arr, n, k);
+    
+    return p;
+}
+
+========================pivot elemet================
+
+#include<iostream>
+using namespace std;
+int pivot(int arr[],int n){
+    int s=0;
+    int e=n-1;
+   int mid=s+(e-n)/2;
+    while(s<e){
+        if(arr[mid]>=arr[0]){
+            s=mid+1;
+        }
+        else{
+            e=mid;
+        }
+        mid=s+(e-s)/2;
+    }
+    return s;
+}
+int main(){
+    int arr1[5]={3,8,10,17,1};
+    cout<<"pivot index "<<pivot(arr1,5)<<endl;
+}
+
+=================================sqrt======================================
+#include<iostream>
+using namespace std;
+
+ long long int sqrtInteger(int n) {
+        
+        int s = 0;
+        int e = n;
+        long long int mid = s + (e-s)/2;
+        
+        long long int ans = -1;
+        while(s<=e) {
+            
+            long long int square = mid*mid;
+            
+            if(square == n)
+                return mid;
+            
+            if(square < n ){
+                ans = mid;
+                s = mid+1;
+            }
+            else
+            {
+                e = mid - 1;
+            }
+            mid = s + (e-s)/2;
+        }
+        return ans;
+    }
+
+double morePrecision(int n, int precision, int tempSol) {
+    
+    double factor = 1;
+    double ans = tempSol;
+
+    for(int i=0; i<precision; i++) {
+        factor = factor/10;
+
+        for(double j=ans; j*j<n; j= j+factor ){
+            ans = j;
+        }
+    }
+    return ans;
+}
+
+int main() {
+    int n;
+    cout <<" Enter the number " << endl;
+    cin >> n;
+
+    int tempSol = sqrtInteger(n);
+    cout <<" Answer is " << morePrecision(n, 3, tempSol) << endl;
+
+    return 0;
+}
+=============================Book Allocation problem===========================
+#include<vector>
+using namespace std;
+
+bool isPossible(vector<int> arr, int n, int m, int mid) {
+    int studentCount = 1;
+    int pageSum = 0;
+    //cout << "checking for mid "<< mid <<endl;
+    
+    for(int i = 0; i<n; i++) {
+        if(pageSum + arr[i] <= mid) {
+            pageSum += arr[i];
+        }
+        else
+        {
+            studentCount++;
+            if(studentCount > m || arr[i] > mid ) {
+            return false;
+        }
+            pageSum = arr[i];
+        }
+        if(studentCount > m) {
+            return false;
+        }
+        //cout << " for i " << i << " Student "<< studentCount << " pageSum " << pageSum << endl;
+    }
+    return true;
+}
+
+int allocateBooks(vector<int> arr, int n, int m) {
+    int s = 0;
+    int sum = 0;
+    
+    for(int i = 0; i<n; i++) {
+        sum += arr[i];
+    }
+    int e = sum;
+    int ans = -1;
+    int mid = s + (e-s)/2;
+    
+    while(s<=e)
+    {
+        if(isPossible(arr,n,m,mid)) {
+            //cout<<" Mid returned TRUE" << endl;
+            ans = mid;
+            e = mid - 1;
+        }
+        else
+        {
+            s = mid + 1;
+        }
+        mid = s + (e-s)/2;
+    }
+    return ans;
+}
+=================================Insertion Sort=================================================
+#include <bits/stdc++.h> 
+void insertionSort(int n, vector<int> &arr){
+    // Write your code here.
+    for(int i=1;i<n;i++){
+        int temp=arr[i];
+        int j=i-1;
+        for(;j>=0;j--){
+            if(arr[j]>temp){
+                arr[j+1]=arr[j];
+            }
+            else{
+                break;
+            }
+            
+
+        }
+        arr[j+1]=temp;
+    }
+}
+==================================Selection sort============================================
+#include<vector>
+using namespace std;
+void selectionSort(vector<int>& arr, int n)
+{   
+    for(int i = 0; i < n-1; i++ ) {
+        int minIndex = i;
+        
+        for(int j = i+1; j<n; j++) {
+            
+            if(arr[j] < arr[minIndex]) 
+                minIndex = j;
+            
+        }
+        swap(arr[minIndex], arr[i]);
+    }
+}
+
+==================================bubble sort==============================================
+#include<vector>
+using namespace std;
+void bubbleSort(vector<int>& arr, int n)
+{   
+    for(int i = 1; i<n; i++) {
+        //for round 1 to n-1
+        bool swapped = false;
+        
+        for(int j =0; j<n-i; j++) {
+            
+            //process element till n-i th index
+            if(arr[j] > arr[j+1]) {
+                swap(arr[j], arr[j+1]);
+                swapped = true;
+            }
+            
+        }
+        
+        if(swapped == false) {
+            //already sorted
+            break;
+        }
+           
+    }
+}
+
+
+=======================Stl basic -1============================================
+
+#include<iostream>
+#include<array>
+using namespace std;
+int main(){
+    int basic[3]={1,2,3};
+    array<int,4>a={1,2,3,4};
+    int size=a.size();
+    for(int i=0;i<size;i++){
+        cout<<a[i]<<endl;
+    }
+    cout<<"Element at 2nd Index"<<a.at(2)<<endl;
+    cout<<"Empty or not"<<a.empty()<<endl;
+    cout<<"First Element-->"<<a.front()<<endl;
+    cout<<"Last element-->"<<a.back()<<endl;
+    
+}
+
+
+===========================================vector========================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    //vector declaration
+    vector<int>v;
+    //vector declaration with size and which element(1) to assign in default it is 0.
+    vector<int> a(5,1);
+    cout<<"Print vector a "<<endl;
+    for(int i:a){
+        cout<<i<<" ";
+    }cout<<endl;
+    //copying the vector a in another vector
+    vector<int>last(a);
+    cout<<"Print vector a "<<endl;
+    for(int i:a){
+        cout<<i<<" ";
+    }cout<<endl;
+    
+    cout<<"Size->"<<v.capacity()<<endl;
+    
+    v.push_back(1);
+    cout<<"Size->"<<v.capacity()<<endl;
+    
+    v.push_back(2);
+    cout<<"Size->"<<v.capacity()<<endl;
+    
+    v.push_back(3);
+    //here capacity of the vector is 4 because it dynamically allocated as for the property of vector.
+    cout<<"Size->"<<v.capacity()<<endl;
+    //define size;
+    cout<<"Size->"<<v.size()<<endl;
+    
+    cout<<"Element at index 2 is "<<v.at(2)<<endl;
+    //printing front and back element of vector
+    cout<<"front "<<v.front()<<endl;
+    cout<<"back "<<v.back()<<endl;
+    
+    cout<<"before pop"<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+         
+    }cout<<endl;
+    //removing element from the back;
+    v.pop_back();
+    cout<<"After Pop"<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }cout<<endl;
+    
+    cout<<"before clear size "<<v.size()<<endl;
+    //it clear only elements in the vector not clear the capacity;
+    v.clear();
+    
+    cout<<"after clear size "<<v.size()<<endl;
+    
+}
+===============================================================deque===============================================================
+
+//deque is a data structure in which i can delete and insert element in it from front as well as back side.
+
+#include<iostream>
+#include<deque>
+
+using namespace std;
+int main(){
+    //declare
+    deque<int> d;
+    //pushing element
+    d.push_back(1);
+    d.push_front(2);
+    
+   // for(int i:d){
+    //    cout<<i<<" ";
+   // }
+    cout<<endl;
+    //front se delete
+    /*d.pop_front();
+    cout<<endl;
+    for(int i:d){
+        cout<<i<<" ";
+    }*/
+    cout<<"Print first index Element -> "<<d.at(1)<<endl;
+    
+    cout<<"front "<<d.front()<<endl;
+    cout<<"back "<<d.back()<<endl;
+    //checking
+    cout<<"Empty or not "<<d.empty()<<endl;
+    
+    cout<<"Before erase "<<d.size()<<endl;
+    //doing erase from the start.(+1 ,start se kitna delete karna hai oo bata raha hai)
+    d.erase(d.begin(),d.begin()+1);
+    
+    cout<<"after erase "<<d.size()<<endl;
+    //printing the deque
+    for(int i:d){
+        cout<<i<<endl;
+    }
+    
+}
+
+========================================================list==================================================
+// list is made up of doubly link list and it can't we access it element randamonly like array we have to traverse each element;
+
+
+#include<iostream>
+#include<list>
+
+using namespace std;
+int main(){
+    list<int> l;
+    //copying the list
+    list<int>n(5,100);
+    cout<<"Printing n "<<endl;
+    
+    for(int i:n){
+        cout<<i<<" ";
+        
+    }cout<<endl;
+    //inserting the elements
+    l.push_back(1);
+    l.push_front(2);
+    
+    for(int i:l){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    //as we read previously
+    l.erase(l.begin());
+    cout<<"after erase"<<endl;
+    for(int i:l){
+        cout<<i<<" ";
+    }cout<<endl;
+    
+    cout<<"size of list " <<l.size()<<endl;
+}
+
+
+============================================================stack================================================================
+//stack follows the last in first out(LIFO) concept
+//jaise sadi me khane ke plates rakhe hote hai aur upper wala plate pahle nikalte hai.
+
+#include<iostream>
+#include<stack>
+using namespace std;
+int main(){
+    //declare
+stack<string>s;
+
+s.push("love");
+s.push("babbar");
+s.push("Kumar");
+
+cout<<"Top element "<<s.top()<<endl;
+//nikal diya
+s.pop();
+cout<<"Top element "<<s.top()<<endl;
+cout<<"Size of stack "<<s.size()<<endl;
+
+cout<<"Empty or not "<<s.empty()<<endl;
+}
+
+================================================queue============================================================
+//queue is a data structure which follow (FIFO).
+
+#include<iostream>
+#include<queue>
+
+using namespace std;
+int main(){
+    queue<string> q;
+    q.push("love");
+    q.push("Babbar");
+    q.push("kumar");
+    
+    cout<<"Size before pop"<<q.size()<<endl;
+    cout<<"First Element "<<q.front()<<endl;
+    q.pop();
+    cout<<"First element "<<q.front()<<endl;
+    
+    cout<<" Size after pop "<<q.size()<<endl;
+}
+
+=================================priority -queue=======================================================
+//priority queue is basically used to store and fetch min-heap and max heap;
+// priority queue se jab hum fetch karte hai element to maximum value deta hai
+// similarly min-heap se minimum element deta hai.
+
+#include<iostream>
+#include<queue>
+
+using namespace std;
+
+int main(){
+    //max heap
+    
+    priority_queue<int>maxi;
+    
+    //min heap
+    
+    priority_queue<int,vector<int>, greater<int>>mini;
+    
+    maxi.push(1);
+    maxi.push(3);
+    maxi.push(2);
+    maxi.push(0);
+    cout<<"size->"<<maxi.size()<<endl;
+    // aise iss liye kiya kyu ki maxi ka value baar baar change ho raha hai loop me (nhi toh for loop me bhi maxi.size() likh sakte hai)
+    int n=maxi.size();
+    for(int i=0;i<n;i++){
+        cout<<maxi.top()<<" ";
+        maxi.pop();
+    }cout<<endl;
+    
+    mini.push(5);
+    mini.push(1);
+    mini.push(0);
+    mini.push(4);
+    mini.push(3);
+    cout<<"size->"<<mini.size()<<endl;
+    // aise iss liye kiya kyu ki maxi ka value baar baar change ho raha hai loop me (nhi toh for loop me bhi maxi.size() likh sakte hai)
+    int m=mini.size();
+    for(int i=0;i<m;i++){
+        cout<<mini.top()<<" ";
+       mini.pop();
+    }cout<<endl;
+    
+    cout<<"khali hai kya bhai ??"<<mini.empty()<<endl;
+    }
+
+
+===========================================================set =================================================================
+// set is made up off binary search tree it is used fetch multiple same element as one elelment only../
+//fetching one element at the time.
+//set is slower than unordered set.
+//unorddered set se element kisi bhi order me fetch ho sakta hai
+
+#include<iostream>
+#include<set>
+using namespace  std;
+int main(){
+    set<int>s;
+    s.insert(5);
+    s.insert(5);
+    s.insert(5);
+    s.insert(1);
+    s.insert(6);
+    s.insert(6);
+    s.insert(0);
+    s.insert(0);
+    s.insert(0);
+    
+    for(auto i:s){
+        cout<<i<<endl;
+        
+    }cout<<endl;
+    //making iterator
+    set<int>::iterator it=s.begin();
+    it++;
+    
+    s.erase(it);
+     
+    for(auto i:s){
+        cout<<i<<endl;
+    }
+    cout<<endl;
+    
+    cout<<"-5 is present or not --> "<<s.count(-5)<<endl;
+    //jab bhi find karte hai toh hume uss value ka reference milta hai
+    set<int>::iterator itr=s.find(5);
+    //phir humlog 5 ke agge sare element print kara liye hai.
+    for(auto it=itr;it!=s.end();it++){
+        cout<<*it<<" ";
+        
+        }cout<<endl;
+    }
+    
+
+
+========================================map===================================================
+//map is used to match the key - value pair 
+//ek key ek hi value se map hota hai
+//different key ek value se map ho sakte hai.
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+    map<int,string>m;
+    
+    m[1]="babbar";
+    m[13]="kumar";
+    m[2]="love";
+    
+    m.insert({5,"bheem"});
+    
+    cout<<"before erase"<<endl;
+    for(auto i:m){
+        //dono key-value print karna
+        cout<<i.first<<" "<<i.second<<endl;
+    }
+    
+    cout<<"finding -13->"<<m.count(-13)<<endl;
+    m.erase(13);
+    cout<<"after erase"<<endl;
+    for(auto i:m){
+        cout<<i.first<<" "<<i.second<<endl;
+    }cout<<endl<<endl;
+    
+    auto it=m.find(5);
+    
+    for(auto i=it;i!=m.end();i++){
+        cout<<(*i).first<<endl;
+    }
+    
+}
+
+=================================Algorithm shortcuts=============================================
+//algo shortcut part is discussed here like how we use shortcut of binary search, sorting.searching
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    vector<int>v;
+    
+    v.push_back(1);
+    v.push_back(3);
+    v.push_back(6);
+    v.push_back(7);
+    
+    cout<<"Finding 6-> "<<binary_search(v.begin(),v.end(),6)<<endl;
+    
+    cout<<"lower bound-> "<<lower_bound(v.begin(),v.end(),6)-v.begin()<<endl;
+     cout<<"Upper bound-> "<<upper_bound(v.begin(),v.end(),4)-v.begin()<<endl;
+    
+    int a=3;
+    int b=5;
+    
+    cout<<"max--> "<<max(a,b);
+    cout<<endl;
+    cout<<"min --> "<<min(a,b);
+    
+    swap(a,b);
+    cout<<endl<<"a--> "<<a<<endl;
+    
+    string abcd="abcd";
+    reverse(abcd.begin(),abcd.end());
+    cout<<"string->"<<abcd<<endl;
+    //rotating one element and shifting rest in the left.
+    rotate(v.begin(),v.begin()+1,v.end());
+    cout<<"after rotate"<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }cout<<endl;
+      sort(v.begin(),v.end());
+    cout<<"after sorting"<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }
+    
+    
+}
+=============================array problems---------------------===================================
+=============================reverse the array using vector===================================
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+vector<int> reverse(vector<int> v){
+    int s=0;
+    int e=v.size()-1;
+    while(s<=e){
+        swap(v[s],v[e]);
+        s++;
+        e--;
+            
+    }
+    return v;
+}
+void print(vector<int> v){
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+     vector<int> v;
+    v.push_back(11);
+    v.push_back(7);
+    v.push_back(3);
+    v.push_back(12);
+    v.push_back(4);
+    
+    vector<int> ans=reverse(v);
+    cout<< "Printing the reverse array-->"<<endl;
+    
+    print(ans);
+    
+    
+    
+    
+    
+    return 0;
+    
+}
+
+=====================================merge the two sorted array=====================================================
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void merge(int arr1[], int n, int arr2[], int m, int arr3[]) {
+
+    int i = 0, j = 0;
+    int k = 0;
+    while( i<n && j<m) {
+        if(arr1[i] < arr2[j]){
+            arr3[k++] = arr1[i++];
+        }
+        else{
+            arr3[k++] = arr2[j++];
+        }
+    }
+
+    //copy first array k element ko
+    while(i<n) {
+        arr3[k++] = arr1[i++];
+    }
+
+    //copy kardo second array k remaining element ko
+    while(j<m) {
+        arr2[k++] = arr2[j++];
+    }
+}
+
+void print(int ans[], int n) {
+    for(int i=0; i<n; i++) {
+        cout<< ans[i] <<" ";
+    }
+    cout << endl;
+}
+
+int main() {
+
+    int arr1[5] = {1,3,5,7,9};
+    int arr2[3] = {2,4,6};
+
+    int arr3[8] = {0};
+
+    merge(arr1, 5, arr2, 3, arr3);
+
+    print(arr3, 8);
+
+
+    return 0;
+}
+
+===============================character array=======================================
+length and printing name=====================>>>>>>>>>>>>>>>>>
+#include<iostream>
+using namespace std;
+int getLenth(char name[]){
+    int count=0;
+    for(int i=0;name[i]!='\0';i++){
+        count++;
+    }
+    return count;
+}
+int main(){
+    char name[20];
+    cout<<"Enter the name"<<endl;
+    cin>>name;
+    cout<<"Your name is "<<name<<endl;
+    cout<<"The length is "<<getLenth(name);
+    return 0;
+}
+
+====================reverse the string==============================
+#include<iostream>
+using namespace std;
+void reverse(char name[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<e){
+        swap(name[s],name[e]);
+        s++;
+        e--;
+    }
+}
+int getLenth(char name[]){
+    int count=0;
+    for(int i=0;name[i]!='\0';i++){
+        count++;
+    }
+    return count;
+}
+int main(){
+    char name[20];
+    cout<<"Enter the name"<<endl;
+    cin>>name;
+    cout<<"Your name is "<<name<<endl;
+    int len=getLenth(name);
+    cout<<"The length is "<<len<<endl;
+    cout<<"Reverse of string ";
+    reverse(name,len);
+    cout<<"now your name is--->  ";
+    cout<<name;
+    return 0;
+}
+======================palindrome or not====
+#include<string>
+#include<iostream>
+#include<vector>
+using namespace std;
+class Solution {
+private:
+    bool valid(char ch) {
+        if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9')) {
+            return 1;
+        }
+        
+        return 0;
+    }
+    
+    char toLowerCase(char ch) {
+    if( (ch >='a' && ch <='z') || (ch >='0' && ch <='9') )
+        return ch;
+    else{
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
+    bool checkPalindrome(string a) {
+    int s = 0;
+    int e = a.length()-1;
+
+    while(s<=e) {
+        if(a[s] != a[e])
+        {
+            return 0;       
+        }
+        else{
+            s++;
+            e--;
+        }
+    }
+    return 1;
+}
+public:
+    bool isPalindrome(string s) {
+        
+        //faltu character hatado
+        string temp = "";
+        
+        for(int j=0; j<s.length(); j++) {   
+            if(valid(s[j])) {
+                temp.push_back(s[j]);
+            }
+        }
+        
+        //lowercase me kardo
+        for(int j=0; j<temp.length(); j++) { 
+            temp[j] = toLowerCase(temp[j]);
+        }
+        
+        //check palindrome
+        return checkPalindrome(temp);
+        
+    }
+};
+    
+=========================palindrome or not==================================
+
+#include<iostream>
+using namespace std;
+
+bool checkPalindrome(char a[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<=e){
+        if(a[s]!=a[e]){
+            return 0;
+        }
+        else{
+            s++;
+            e--;
+            
+        }
+       
+    }
+    return 1;
+}
+
+void reverse(char name[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<e){
+        swap(name[s],name[e]);
+        s++;
+        e--;
+    }
+}
+int getLenth(char name[]){
+    int count=0;
+    for(int i=0;name[i]!='\0';i++){
+        count++;
+    }
+    return count;
+}
+int main(){
+    char name[20];
+    cout<<"Enter the name"<<endl;
+    cin>>name;
+    cout<<"Your name is "<<name<<endl;
+    int len=getLenth(name);
+    cout<<"The length is "<<len<<endl;
+    cout<<"Reverse of string ";
+    reverse(name,len);
+    cout<<"now your name is--->  ";
+    cout<<name<<endl;
+    cout<< " Palindrom hai  ?? -->  "<<checkPalindrome(name, len);
+    return 0;
+}
+=========================palindrome or not for upper case character(working)==================================
+#include<iostream>
+using namespace std;
+/*bool valid(char ch) {
+        if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9')) {
+            return 1;
+        }
+        
+        return 0;
+    }*/
+    
+    char toLowerCase(char ch) {
+    if( (ch >='a' && ch <='z') || (ch >='0' && ch <='9') )
+        return ch;
+    else{
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
+bool checkPalindrome(char a[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<=e){
+        if(toLowerCase(a[s])!=toLowerCase(a[e])){
+            return 0;
+        }
+        else{
+            s++;
+            e--;
+            
+        }
+       
+    }
+    return 1;
+}
+
+void reverse(char name[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<e){
+        swap(name[s],name[e]);
+        s++;
+        e--;
+    }
+}
+int getLenth(char name[]){
+    int count=0;
+    for(int i=0;name[i]!='\0';i++){
+        count++;
+    }
+    return count;
+}
+int main(){
+    char name[20];
+    cout<<"Enter the name"<<endl;
+    cin>>name;
+    cout<<"Your name is "<<name<<endl;
+    int len=getLenth(name);
+    cout<<"The length is "<<len<<endl;
+    cout<<"Reverse of string ";
+    reverse(name,len);
+    cout<<"now your name is--->  ";
+    cout<<name<<endl;
+    cout<< " Palindrom hai  ?? -->  "<<checkPalindrome(name, len)<<endl;
+    cout<<"Character is "<<toLowerCase('a')<<endl;
+     cout<<"Character is "<<toLowerCase('B')<<endl;
+    
+    return 0;
+}
+===============================getMaxOccuCharacter==========================--====
+#include<iostream>
+using namespace std;
+char getMaxOccCharacter(string s){
+    int arr[26]={0};
+    //creating an array of count of characters
+    for(int i=0;i<s.length();i++){
+        char ch=s[i];
+        //lowercase
+        int number=0;
+        if(ch>='a'&&ch<='z'){     // or only take lower case according to the question.
+            number=ch-'a';
+        }
+        else{
+            number=ch-'A';
+        }
+        arr[number]++;
+    }
+    int maxi=-1,ans=0;
+    for(int i=0;i<26;i++){
+        if(maxi<arr[i]){
+            ans=i;
+            maxi=arr[i];
+        }
+    }
+    char finalAns='a'+ans;   // or sidha likho return 'a'+ans;
+    return finalAns;
+}
+
+int main(){
+    string s;
+    cin>>s;
+    cout<<getMaxOccCharacter(s)<<endl;
+    
+    return 0;
+}
+
+=====================2D array=========================================================
+
+#include<iostream>
+using namespace std;
+ bool isPresent(int arr[][4],int target, int row, int col){
+     for(int row=0;row<3;row++){
+        for(int col=0;col<4;col++){
+            if(arr[row][col]==target){
+                return 1;
+            }
+        }
+ }
+ return 0;
+ }
+ 
+int main(){
+    
+   int arr[3][4];
+    for(int row=0;row<3;row++){
+        for(int col=0;col<4;col++){
+            cin>>arr[row][col];
+        }
+    }
+    
+    //print 
+    
+    for(int row=0;row<3;row++){
+        for(int col=0;col<4;col++){
+            cout<<arr[row][col]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<"Enter the element to search"<<endl;
+    int target;
+    cin>>target;
+    
+    if(isPresent(arr,target,3,4)){
+        cout<<"element found"<<endl;
+    }
+    else{
+        cout<<"Not found"<<endl;
+    }
+    
+    
+    
+    return 0;
+}
+
+
+=============================2d array intro==============================================
+/*
+#include<iostream> 
+using namespace std; 
+
+bool isPresent(int arr[][3], int target, int row, int col) {
+
+  for(int row=0; row<3; row++) {
+        for(int col=0; col<3; col++) {
+            
+            if( arr[row][col] == target) {
+                return 1;
+            }
+            
+        }
+    }
+    return 0;
+}
+
+//to print row wise sum
+void printColSum(int arr[][3], int row, int col) {
+    cout << "Printing Sum -> " << endl;
+    for(int col=0; col<3; col++) {
+        int sum = 0;
+        for(int row=0; row<3; row++) {
+            sum += arr[row][col];
+        }
+        cout << sum << " ";
+    }
+
+    cout << endl;
+}
+
+
+//to print row wise sum
+void printSum(int arr[][3], int row, int col) {
+    cout << "Printing Sum -> " << endl;
+    for(int row=0; row<3; row++) {
+        int sum = 0;
+        for(int col=0; col<3; col++) {
+            sum += arr[row][col];
+        }
+        cout << sum << " ";
+    }
+
+    cout << endl;
+}
+
+int largestRowSum(int arr[][3], int row, int col) {
+
+    int maxi = INT_MIN;
+    int rowIndex = -1;
+
+    for(int row=0; row<3; row++) {
+        int sum = 0;
+        for(int col=0; col<3; col++) {
+            sum += arr[row][col];
+        }
+
+        if(sum > maxi ) {
+            maxi = sum;
+            rowIndex = row;     //sum aa gya aab uska row bhi sath sath store kar rahe hai.
+        }
+       
+    }
+
+    cout << "the maximum sum is " << maxi << endl;
+    return rowIndex;
+}
+
+int main() {
+
+    //create 2 d array
+    int arr[3][3];
+    //int arr[3][4] = {1,2,3,4,5,6,7,8,9,10,14,16};
+    //int arr[3][4] = {{1,11,111,1111}, {2,22,222,2222}, {3,33,333,3333}};
+
+    cout << "Enter the elements " <<  endl;
+    //taking input -> row wise input
+    for(int row=0; row<3; row++) {
+        for(int col=0; col<3; col++) {
+            cin >> arr[row][col];
+        }
+    }
+
+
+/*
+//taking input -> col wise input
+    for(int col=0; col<4; col++) {
+        for(int row=0; row<3; row++) {
+            cin >> arr[row][col];
+        }
+    }
+*/
+/*
+    cout << "Printing the array " << endl;
+    //print 
+    for(int row=0; row<3; row++) {
+        for(int col=0; col<3; col++) {
+            cout << arr[row][col] << " ";
+        }
+        cout << endl;
+    }
+/*
+    cout <<" Enter the element to search " << endl;
+    int target;
+    cin >> target;
+    if(isPresent(arr, target, 3, 3)) {
+        cout <<" Element found " << endl;
+    }
+    else{
+        cout <<" Not Found" << endl;
+    }
+    printColSum(arr, 3, 3 );
+    */
+ /*  int ansIndex = largestRowSum(arr,3,3);
+   cout << " Max row is at index " << ansIndex << endl;
+
+    return 0;
+}
+======================================gcd===================================
+using namespace std;
+int gcd(int a,int b){
+    if(a==0){
+        return b;
+    }
+    if(b==0){
+        return a;
+    }
+    while(a!=b){
+        if(a>b){
+            a=a-b;
+        }
+        else{
+            b=b-a;
+        }
+    }
+    return a;
+}
+int main(){
+    int a,b;
+    cout<<"enter the no.s"<<a<<b<<endl;
+    cin>>a>>b;
+    int ans=gcd(a,b);
+    cout<<ans;
+    
+    return 0;
+    
+}
+================================pointer==========================================
+#include<iostream>
+using namespace std;
+int main(){
+    int num=5;
+    cout<<num<<endl;
+    
+    //address of Operator-&
+    cout<<"address of num is"<<&num<<endl;
+    int *ptr=&num;
+    cout<<"Address is"<<ptr<<endl;
+    cout<<"Value is : "<<*ptr<<endl;
+    
+    double d=4.3;
+    double *p2=&d;
+    cout<<"Address is: "<<p2<<endl;
+    cout<<"Value is "<<*p2<<endl;
+    
+    cout<<"size of integer is"<<sizeof(num)<<endl;
+    cout<<"size of pointer is "<<sizeof(ptr)<<endl;
+    cout<<"size of pointer is "<<sizeof(p2)<<endl;
+    return 0;
+}
+
+==============================
+#include<iostream>
+using namespace std;
+int main(){
+    //pointer to int is created, and pointing to same garbage address
+    //int *p=0;
+    
+    //cout<<*p<<endl;
+    int i=5;
+    int *q=&i;
+    cout<<q<<endl;
+    cout<<*q<<endl;
+    
+    int *p=0;
+    p=&i;
+    
+    cout<<p<<endl;
+    cout<<*p<<endl;
+    
+    return 0;
+    
+}
+ //pointer to int is created, and pointing to same garbage address
+    //int *p=0;
+    
+    //cout<<*p<<endl;
+   /* int i=5;
+    int *q=&i;
+    cout<<q<<endl;
+    cout<<*q<<endl;
+    
+    int *p=0;
+    p=&i;
+    
+    cout<<p<<endl;
+    cout<<*p<<endl;
+   
+    
+    int num=5;
+    int a=num;
+    cout<<" a before "<<num<<endl;
+    a++;   // yaha bus a ka value 6 ho raha lekin num me toh abhi bhi 5 hai
+    cout<<"a after "<<num<<endl;
+    cout<<num<<endl;
+    int *p=&num;
+    cout<<"before "<<num<<endl;
+    (*p)++;// pointer jis value ko point kar raha usko update karo
+    cout<<"after "<<num<<endl;
+    
+    //copying a pointer
+    int *q=p;
+    cout<<p<<"-"<<q<<endl; // same address ko point kar raha hai
+    cout<<*p<<"-"<<*q<<endl; //value bhi same hoga
+    
+    //important concept
+    int i=3;
+    int *t=&i;
+    //cout<<(*t)++<<endl; // (post increment)yaha print hone par value 3 hi rahega lekin print ke baad next value me t - 4 ho jayega
+    *t=*t+1;
+    cout<<*t<<endl;// yaha pe value 5 ho jayega
+    cout<<"before t"<<t<<endl;
+    t=t+1;
+    cout<<"after t"<<t<<endl;
+    
+    
+    return 0;
+    
+}
+-------------------------------------
+
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[10]={2,3,8};
+    cout<<" address  of first memory block is "<<arr<<endl;
+     cout<<" address  of first memory block is "<<&arr[0]<<endl;
+     
+     cout<<"4th "<<*arr<<endl;
+     
+     return 0;
+}
+
+================pointer-2 -=========================
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[10]={23,122,41,67};
+ /*   cout<<" address  of first memory block is "<<arr<<endl;
+     cout<<" address  of first memory block is "<<&arr[0]<<endl;
+     
+     cout<<"4th "<<*arr<<endl;
+     cout<<"5th "<<*arr+1<<endl;
+     cout<<"6th "<<*(arr+1)<<endl;
+     cout<<"7th "<<*(arr)+1<<endl;
+     cout<<"8th "<<arr[2]<<endl;
+     cout<<"9th "<<*(arr+2)<<endl;
+     
+     int i=3;
+     cout<<i[arr]<<endl;
+    
+     int temp[10]={1,2};
+     cout<<sizeof(temp)<<endl;
+     cout<<"1st "<<sizeof(*temp)<<endl;//4
+     cout<<" 2nd "<<sizeof(&temp)<<endl;//8 //yaha address ka size nikal rahe uska value hamesha 8 hi rahega.
+     
+     int *ptr=&temp[0];
+     cout<<sizeof(ptr)<<endl;//8
+     cout<<sizeof(*ptr)<<endl;//4
+     cout<<sizeof(&ptr)<<endl;//8
+     
+    int a[20]={1,2,3,5};
+    cout<<" -> "<<&a[0]<<endl;
+    cout<<&a<<endl;
+    cout<<a<<endl;
+    
+    int *p=&a[0];
+    cout<<p<<endl;
+    cout<<*p<<endl;
+    cout<<"->"<<&p<<endl;// bhi upper -> ye sign wala hai dono ka value different hoga kyu ki ye alag alag memory location hai
+    
+     
+     return 0;
+     =============================pointers part-1=intro=========================================
+     #include<iostream>
+using namespace std;
+
+int main () {
+
+    int num  = 5 ;
+
+    cout << num << endl;
+
+    // address of Operator - &
+
+    cout <<" address of num is " << &num << endl;
+
+    int *ptr = &num;
+
+    cout << "Address is : " << ptr << endl;
+    cout << "value is : " << *ptr << endl;
+
+    double d = 4.3;
+    double *p2 = &d;
+
+    cout << "Address is : " << p2 << endl;
+    cout << "value is : " << *p2 << endl;
+
+    cout << " size of integer is " << sizeof(num) << endl;
+    cout << " size of pointer is " << sizeof(ptr) << endl;
+    cout << " size of pointer is " << sizeof(p2) << endl;
+
+
+
+    return 0;
+}
+======================playing with pointer-=================================
+#include<iostream>
+using namespace std;
+
+int main () {
+
+    //pointer to int is created, and pointing to some garbage address
+    //int *p = 0; 
+
+    //cout << *p << endl;
+
+    /*
+    int i = 5;
+    int *q = &i;
+    cout << q << endl;
+    cout << *q << endl;
+    int *p = 0;
+    p = &i;
+    cout << p << endl;
+    cout << *p << endl;
+  
+
+   int num = 5;
+   int a = num;
+   cout << "a before " << num << endl;
+   a++;
+   cout << "a after " << num << endl;
+
+
+   int *p  = &num;
+   cout << "before " << num << endl;
+   (*p)++;
+   cout << "after " << num << endl;
+
+    //copying a pointer
+   int *q = p;
+   cout << p <<" - " << q << endl;
+   cout << *p <<" - " << *q << endl;
+
+   //important concept
+   int i = 3;
+   int *t = &i;
+   //cout <<  (*t)++ << endl;
+   *t = *t +1;
+    cout << *t << endl;
+    cout << " before t " << t << endl;
+    t = t + 1;
+    cout << " after t " << t << endl;
+
+
+    return 0;
+}
+
+===========================pointer -2===============================pointer array================
+#include<iostream>
+using namespace std;
+
+int main () {
+
+    //int arr[10] = {23, 122, 41, 67};
+
+   /*
+    cout <<" address of first memory block is " << arr << endl;
+    cout << arr[0] << endl;
+    cout <<" address of first memory block is " << &arr[0] << endl;
+    cout << "4th " << *arr << endl;
+    cout << "5th " << *arr + 1 << endl;
+    cout << "6th " << *(arr + 1) << endl;
+    cout << "7th " << *(arr) + 1 << endl;
+    cout << "8th " << arr[2] << endl;
+    cout << "9th " << *(arr+2) << endl;
+    int i = 3;
+    cout << i[arr] << endl;
+   int temp[10] = {1,2};
+   cout << sizeof(temp) << endl;
+   cout << " 1st " <<  sizeof(*temp) << endl;
+   cout << " 2nd " <<  sizeof(&temp) << endl;
+   int *ptr = &temp[0];
+   cout << sizeof(ptr) << endl ;
+   cout << sizeof(*ptr) << endl ;
+   cout << sizeof(&ptr) << endl ;
+   int a[20] = {1,2,3,5};
+   //cout << " ->" << &a[0] << endl;
+  // cout << &a << endl;
+   //cout << a << endl;
+   int *p = &a[0];
+   //cout << p << endl;
+   //cout << *p << endl;
+   cout << "-> " << &p << endl;
+  
+
+   int arr[10];
+
+//ERROR
+   //arr = arr+1;
+
+    int *ptr = &arr[0];
+    cout << ptr << endl;
+    ptr = ptr + 1;//714 adreess from 710.
+    cout << ptr << endl;
+===================================pointer charachter array===================================
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int arr[5] = {1,2,3,4,5};
+    char ch[6] = "abcde";
+
+
+    cout << arr << endl;
+    //attention here
+    cout << ch << endl;
+    
+    char *c = &ch[0];
+    //prints entire string
+    cout << c << endl;
+
+    char temp = 'z';
+    char *p = &temp;
+
+    cout << p << endl;//z00j - means jab tak null character nhi milta tab tak print karo.
+
+
+    return 0;
+}
+
+=================================pointer functions=======================================
+#include<iostream>
+using namespace std;
+
+void print(int *p) {
+
+    cout << *p << endl; 
+
+}
+
+void update(int *p) {
+
+   // p = p + 1;
+   //cout << "inside "<< p <<endl;
+   *p = *p + 1;
+
+}
+
+int getSum(int *arr, int n) {
+
+    cout << endl << "Size : " << sizeof(arr) << endl;
+
+    int sum = 0;
+    for(int i=0;i<n;i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main() {
+/*
+    int value = 5;
+    int *p = &value;
+    //print(p);
+    cout <<" Before " << *p << endl;
+    update(p);
+    cout <<" After " << *p << endl;
+   
+
+    int arr[6] = {1,2,3,4,5,8};
+
+    cout << "Sum is " << getSum(arr+3 ,3) << endl ;  
+
+    return 0;
+}
+
+================================double pointer===============================
+#include<iostream>
+using namespace std;
+
+void update(int **p2) {
+    //p2 = p2 + 1;
+    //kuch change hoga  - NO
+
+    //*p2 = *p2 + 1;
+    //kuch change hoga - YES
+
+    **p2 = **p2 + 1;
+    //kuch change hoga - YES
+}
+    void update(int *p){
+        *p = (*p)  *  2;
+    }
+        void increment(int **p){
+        ++(**p);
+    }
+int main() {
+/*
+    int i = 5;
+    int* p = &i;
+    int** p2 = &p;
+    cout<< endl << endl <<" Sab sahi chal rha h " << endl << endl ;
+    cout << i << endl;
+    cout << *p << endl;
+    cout << **p2 << endl;
+    cout << &i << endl;
+    cout << p << endl;
+    cout << *p2 << endl;
+    cout << &p << endl;
+    cout << p2 << endl;
+    cout << endl << endl;
+    cout<< "before " << i << endl;
+    cout<< "before " << p << endl;
+    cout<< "before " << p2 << endl;
+    update(p2);
+    cout<< "after " << i << endl;
+    cout<< "after " << p << endl;
+    cout<< "after " << p2 << endl;
+    cout << endl << endl;
+  
+
+
+
+
+        int num = 110;
+        int *ptr = &num;
+        increment(&ptr);
+        cout << num << endl;
+
+
+
+    return 0;
+}
+=====================================pointer mcq=========================================
+
+  int first = 8;
+    int second = 18;
+    int *ptr = &second;
+    *ptr = 9;
+    cout  << first << " " << second << endl;    
+
+    int first = 6;
+    int *p = &first;
+    int *q = p;
+    (*q)++;
+    cout << first  << endl;
+
+    int first = 8;
+    int *p = &first;
+    cout << (*p)++ << " ";
+    cout << first << endl;
+
+    int *p = 0;
+    int first = 110;
+    *p = first;
+    cout << *p << endl;
+
+    int first = 8;
+    int second = 11;
+    int *third = &second; 
+    first = *third;
+    *third = *third + 2;
+    cout  << first << "  " << second << endl;
+
+    float f = 12.5;
+    float p = 21.5;
+    float* ptr = &f;
+    (*ptr)++;
+    *ptr = p;
+    cout << *ptr << " " << f << " " << p << endl;
+    
+
+    int arr[5];
+    int *ptr;
+    cout << sizeof(arr) << " " << sizeof(ptr) << endl;
+
+    int arr[] = {11, 21, 13, 14};
+    cout << *(arr) << " " << *(arr+1) << endl;
+
+    int arr[6] = {11, 12, 31};
+    cout << arr << " " << &arr << endl;
+
+    int arr[6] = {11, 21, 13};
+    cout << (arr + 1) << endl;
+
+    int arr[6] = {11, 21, 31};
+    int *p = arr;
+    cout << p[2] << endl;
+
+    int arr[] = {11, 12, 13, 14, 15};
+    cout << *(arr) << " " << *(arr + 3);
+
+    int arr[] = {11, 21, 31, 41};
+    int *ptr = arr++;
+    cout << *ptr << endl;
+
+     char ch = 'a';
+    char* ptr = &ch;
+    ch++;
+    cout << *ptr << endl;
+
+
+    char arr[] = "abcde";
+    char *p = &arr[0];
+    cout << p << endl;
+
+    char arr[] = "abcde";
+    char *p = &arr[0];
+    p++;
+    cout << p << endl;   
+
+    char str[]= "babbar";
+    char *p = str;
+    cout << str[0] << " " << p[0] << endl;
+
+
+    void update(int *p){
+        *p = (*p)  *  2;
+    }
+
+    int main(){
+        int i = 10;
+        update(&i);
+        cout << i << endl;
+    }
+
+
+    void fun(int arr[]) {
+        cout << arr[0] << " ";
+    }
+
+    int main() {
+        int arr[] = {11, 12, 13, 14};
+        fun(arr + 1);
+        cout << arr[0] << endl;
+    }
+
+
+
+    void update(int *p){
+        int a = 70;
+        p = &a;
+        *p = (*p) * (*p);
+    }
+
+    int main(){
+        int a = 70;
+        square(&a);
+        cout << a << endl;
+    }
+
+
+    int first = 10;
+    int *p = &a;
+    int **q = &p;
+    int second = 20;
+    *q = &second;
+    (*p)++;
+    cout << first << " " << second << endl;
+
+    int first = 110;
+    int *p = &first;
+    int **q = &p;
+    int second = (**q)++ + 9;
+    cout << first << " " << second << endl; 
+
+
+    int first = 100;
+    int *p = &first;
+    int **q = &p;
+    int second = ++(**q);
+    int *r = *q;
+    ++(*r);
+    cout << first << " " << second << endl; 
+
+    void increment(int **p){
+        ++(**p);
+    }
+
+    int main(){
+        int num = 110;
+        int *ptr = &num;
+        increment(&ptr);
+        cout << num << endl;
+    }  
+
+
+
+    int main()
+    {
+    int arr[] = {41, 52, 36, 74};
+    int *p = (arr + 1);
+    cout << *arr + 8;
+    return 0;
+    }
+
+
+    int main()
+    { 
+        char *p; 
+        char str[] = "pqrstuv";
+        p = str;
+        p += 3;
+        cout << p;
+        return 0;
+    }
+
+
+    int main()
+    {
+        char arr[20];
+        int i;
+        for(i = 0; i < 10; i++) {
+            *(arr + i) = 65 + i;
+        }
+        *(arr + i) = '\0';
+        cout << arr;
+        return 0;
+    }
+
+    int main()
+    {
+        float arr[5] = {12.5, 10.0, 13.5, 90.5, 0.5};
+        float *ptr1 = &arr[0];
+        float *ptr2 = ptr1 + 3;
+        cout<<*ptr2<<" ";
+        cout<< ptr2 - ptr1;
+        return 0;
+    }
+
+
+    int main() {
+        char st[] = "ABCD";
+        for(int i = 0; st[i] != ‘\0’; i++) {
+            cout << st[i] << *(st)+i << *(i+st) << i[st];
+        }
+        return 0;
+    }
+
+    void Q(int z)
+    {
+        z += z;
+        cout<<z << " ";
+    }
+
+    void P(int *y) 
+    {
+        int x = *y + 2;
+        Q(x);
+        *y = x - 1; 
+        cout<<x << " ";
+    }
+
+    int main()
+    {
+        int x = 5;
+        P(&x);
+        cout<<x;
+        return 0;
+    }
+
+
+    int main()
+    {
+        int ***r, **q, *p, i=8;
+        p = &i;
+        (*p)++;
+        q = &p;
+        (**q)++;
+        r = &q;
+        cout<<*p << " " <<**q << " "<<***r;
+        return 0;
+    }
+
+
+    int f(int x, int *py, int **ppz) {
+        int y, z;
+        **ppz += 1;
+        z = **ppz;
+        *py += 2;
+        y = *py;
+        x += 3;
+        return x + y + z;
+    }
+
+    int main() {
+        int c, *b, **a;
+        c = 4;
+        b = &c;
+        a = &b;
+        cout << f(c, b, a);
+        return 0;
+    }
+
+    ======================================dyamic allocation --reference variable=============================================
+    #include<iostream>
+using namespace std;
+
+int& func(int a) {
+    int num = a;
+    int& ans = num;
+    return ans;
+}
+
+int* fun(int n) {
+    int* ptr = &n;
+    return ptr;
+}
+
+void update2(int& n) {
+    n++;
+}
+
+void update1(int n) {
+    n++;
+}
+
+int main() {
+
+    /*
+    int i = 5;
+    //create a ref variable 
+    int& j = i;
+    cout << i << endl; 
+    i++;
+    cout << i << endl; 
+    j++;
+    cout << i << endl; 
+    cout << j << endl;
+    
+
+   int n = 5;
+   
+   cout << "Before " << n << endl;
+   update2(n);
+   cout << "After " << n << endl;
+
+
+    fun(n);
+
+    return 0;
+}
+=============================dynamic array=====================================
+#include<iostream>
+using namespace std;
+
+int getSum(int *arr, int n) {
+
+    int sum = 0;
+    for(int i=0; i<n; i++) {
+        sum += arr[i];
+    } 
+    return sum;
+}
+
+int main() {
+
+    int n;
+    cin >> n;
+    
+    //variable size array
+    int* arr = new int[n];
+
+    //takign inputn in aray
+    for(int i=0; i<n; i++) {
+        cin >> arr[i];
+    }
+
+    int ans = getSum(arr, n);
+
+    cout << "answer is "<< ans << endl;
+
+//case 1
+    while(true) {
+        int i = 5;
+    }
+    
+//case 2
+    while(true) {
+        int* ptr = new int;
+    }
+
+
+
+
+    return 0;
+}
+
+  */
+
+
+
+   // return  0;
+   /*
+
+   ===============================dynamic allocation part-2====2d array.cpp----=============================================
+   #include <iostream>
+using namespace std;
+
+int main() {
+
+    int row;
+    cin >> row;
+
+    int col;
+    cin >> col;
+
+    //creating a 2D array
+    int** arr = new int*[row];
+    for(int i=0; i<row; i++) {
+        arr[i] = new int[col];
+    }
+
+    //taking input
+    for(int i=0; i<row; i++) {
+        for(int j=0; j<col; j++) {
+            cin >> arr[i][j];
+        }
+    }
+
+    //taking output
+    cout << endl;
+    for(int i=0; i<row; i++) {
+        for(int j=0; j<col; j++) {
+            cout << arr[i][j] << " ";
+        } cout << endl;
+    }
+
+
+    //releasing memory
+    for(int i=0; i<row; i++) {
+        delete [] arr[i];
+    }   
+
+    delete []arr;
+
+    //how to create a 2D array dynamically
+    //input/Output
+    //memory free kaise karani hai 
+
+    return 0;
+}
+
+
+}
+
+
+      
+     
+    
+}
+===================macros==============
+#include<iostream> 
+using namespace std;
+
+#define PI 3.14
+
+int main() {
+
+    int r = 5;
+    //double pi = 3.14;
+
+    double area = PI * r * r;
+
+    cout << "Area is " << area << endl;
+
+    return 0;
+}
+=======inline functions===============================
+#include<iostream>
+using namespace std;
+
+
+
+inline int getMax(int& a, int& b) {
+    return (a>b) ? a : b;
+}
+
+int main() {
+
+    int a = 1, b = 2;
+    int ans = 0; 
+
+    ans = getMax(a,b);
+    cout << ans << endl;
+
+    a = a + 3;
+    b = b + 1;
+
+    ans = getMax(a,b);
+    cout << ans << endl;
+
+
+
+    return 0;
+}
+===================global variable===========================
+#include<iostream>
+using namespace std;
+
+int score = 15;
+
+
+void a(int& i) {
+
+    cout << score << " in a" << endl;
+    score++;
+    char ch = 'a';
+    cout << i << endl;
+}
+
+void b(int& i) {
+    cout << score << " in b" << endl;
+    cout << i << endl;
+}
+
+int main() {
+    cout << score << " in main" << endl;
+    int i = 5;
+    a(i);
+    b(i);
+
+    return 0;
+}
+==========================default arguments=================
+#include<iostream>
+using namespace std;
+
+void print(int arr[], int n  , int start = 0) {
+
+    for(int i = start; i<n; i++) {
+        cout << arr[i] << endl;
+    }
+
+}
+
+int main() {
+
+    int arr[5] = {1,4,7,8,9};
+    int size = 5;
+
+    print(arr, size);
+    cout << endl;
+    print(arr, size, 2);
+
+
+    return 0;
+}
+=====================counting.cpp==========================
+#include<iostream> 
+using namespace std;
+
+void print(int n) {
+    //base case
+    if(n == 0) {
+        return ;
+    }
+
+    //Recursive relation
+    print(n-1);
+
+    cout << n << endl;
+}
+
+int main() {
+
+    int n;
+    cin >> n;
+    cout << endl;
+    print(n);
+
+
+    return 0;
+}
+
+=====================recursion lecture -1==============================
+#include<iostream>
+using namespace std;
+int factorial(int n){
+    //base case
+    if(n==0)
+        return 1;
+    
+//int smallerProblem=factorial(n-1);
+    //int biggerProblem=n*smallerProblem;
+    
+    return n*factorial(n-1);;
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+    int ans=factorial(n);
+    cout<<ans<<endl;
+    return 0;
+    
+}
+========================power using recursion================================
+#include<iostream>
+using namespace std;
+int power(int n){
+    if(n==0)
+    return 1;
+        //int smallerProblem=power(n-1);
+        //int biggerProblem=2*smallerProblem;
+        
+        return 2*power(n-1);
+    
+}
+int main(){
+    int n;
+    cin>>n;
+    int ans=power(n);
+    cout<<ans<<endl;
+    return 0;
+    
+}
+
+===================counting printing================================
+#include<iostream>
+using namespace std;
+void print (int n){
+    if(n==0)
+    return ;
+    //cout<<n<<endl;
+    print(n-1);
+    cout<<n<<endl;
+    
+}
+int main(){
+    int n;
+    cin>>n;
+    cout<<endl;
+    print(n);
+    return 0;
+    
+}
+=================part-2=src-dest========================
+#include<iostream>
+using namespace std;
+void reachHome(int src,int dest){
+    cout<<"source is"<<src<<" destination is"<<dest<<endl;
+    
+    if(src==dest)
+    return;
+    
+    src++;
+    reachHome(src,dest);
+     
+     
+}
+
+int main(){
+    int dest=10;
+    int src=1;
+    cout<<endl;
+    reachHome(src,dest);
+    cout<<"reached home"<<endl;
+}
+============say digit=======================
+#include<iostream>
+using namespace std;
+void sayDigit(int n,string arr[]){
+    if(n==0)
+    return;
+    int digit=n%10;
+     n=n/10;
+     sayDigit(n,arr);
+     cout<<arr[digit]<<" ";
+    
+}
+
+
+
+int main(){
+      string arr[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+      
+      int n;
+      cin>>n;
+      cout<<endl<<endl;
+      sayDigit(n,arr);
+      cout<<endl;
+      return 0;
+      
+}
+===================array is sorted or not using recursion===================
+#include<iostream>
+using namespace std;
+bool binarySearch(int arr[],int size){
+    if(size==0||size==1)
+    return true;
+    if(arr[0]>arr[1]){
+        return false;
+        
+    }
+    else {
+        bool ans=binarySearch(arr+1,size-1);
+        return ans;
+    }
+}
+
+int main(){
+    int arr[5]={1,2,4,6,8};
+    int size=5;
+   bool x= binarySearch(arr,size);
+   if(x){
+       cout<<"array is sorted"<<endl;
+   }
+   else{
+       cout<<"array is not sorted"<<endl;
+   }
+}
+
+=======================sum finding==================================
+#include<iostream>
+using namespace std;
+int getSum(int arr[],int size){
+    //base case
+    if(size==0){
+        return 0;
+    }
+        if(size==1){
+            return arr[0];
+        }
+    int remainingPart=getSum(arr+1,size-1);
+    int sum=arr[0]+remainingPart;
+    return sum;
+        
+}
+    
+
+int main(){
+    int arr[5]={4,2,4,6,8};
+    int size=5;
+   int sum=getSum(arr,sum);
+   cout<<"Sum is"<<sum<<endl;
+   return 0;
+}
+
+==========================linear search using recursio=============
+#include<iostream>
+using namespace std;
+
+void print(int arr[], int n) {
+    cout << "Size of array is " << n << endl;
+
+    for(int i=0; i<n; i++) {
+        cout << arr[i] << " ";
+    } cout << endl;
+
+}
+
+bool linearSearch(int arr[], int size, int k ) {
+    print(arr,size);
+    //base case
+    if(size == 0) 
+        return false;
+
+    if(arr[0] == k) {
+        return true;
+    }
+    else {
+        bool remainingPart = linearSearch(arr+1, size-1, k );
+        return remainingPart;
+    }
+}
+
+int main() {
+
+    int arr[5] = {3,5,1,2,6};
+    int size = 5;
+    int key = 12;
+    bool ans = linearSearch(arr, size, key);
+
+    if(ans ){
+        cout << "Present " << endl;
+    }
+    else{
+        cout << "absent " << endl;
+    }
+
+    return 0;
+}
+================binary search using recursion==================
+#include<iostream>
+using namespace std;
+
+void print(int arr[], int s, int e) {
+
+    for(int i=s; i<=e; i++) {
+        cout << arr[i] << " ";
+    } cout << endl;
+}
+
+bool binarySearch(int *arr, int s, int e , int k ) {
+
+    //base case
+
+    //element not found
+    if(s>e)
+        return false;
+
+    int mid = s + (e-s)/2;
+
+    //element found
+    if(arr[mid] == k)
+        return true;
+
+    if(arr[mid] < k) {
+        return binarySearch(arr, mid+1, e, k);
+    }
+    else{
+        return binarySearch(arr, s, mid-1, k);
+    }
+}
+
+
+int main() {
+
+    int arr[11] = {2,4,6,10,14,18,22,38,49,55,222};
+    int size = 11;
+    int key = 222;
+
+    cout << "Present or not " << binarySearch(arr, 0, size-1, key) << endl;
+
+    return 0;
+}
+========================reverse string====================================
+#include<iostream>
+using namespace std;
+
+void reverse(string& str, int i, int j ) {
+
+    cout << "call recieved for " << str << endl;
+
+    //base case
+    if(i>j)
+        return ;
+
+    swap(str[i], str[j]);
+    i++;
+    j--;
+
+    //Recursive call
+    reverse(str,i,j);
+
+}
+
+int main() {
+
+    string name = "abcde";
+    cout << endl;
+    reverse(name, 0 , name.length()-1 );
+    cout << endl;
+    cout << name << endl;
+
+    return 0;
+}
+===========================palindrome or not=========================================
+#include<iostream>
+using namespace std;
+bool isPalindrome(string str,int i, int j){
+    //base case
+    if(i>j)
+    return true;
+    if(str[i]!=str[j]){
+        return false;
+    }
+    return isPalindrome(str,i+1,j-1);
+}
+int main(){
+    string name="abbfda";
+    cout<<endl;
+    bool ans=isPalindrome(name,0,name.length()-1);
+    if(ans){
+        cout<<"its a palindrome";
+        
+    }
+    else{
+        cout<<"Not a plaindrome";
+    }
+}
+================================power===============================
+
+#include<iostream>
+using namespace std;
+int power(int a,int b){
+    if(b==0)
+    return 1;
+    if(b==1)
+    return a;
+   int ans= power(a,b/2);
+   if(b%2==0){
+       return ans*ans;
+       
+   }
+   else{
+       return a*ans*ans;
+   }
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+   int ans= power(a,b);
+   cout<<ans;
+   return 0;
+   
+    
+}
+===========================bubble sort===============================
+
+#include<iostream>
+using namespace std;
+
+void sortArray(int *arr, int n) {
+
+    //base case - already sorted
+    if(n == 0 || n == 1) {
+        return ;
+    }
+
+    //1 case sovle karlia - largest element ko end me rakh dega
+    for(int i=0; i<n-1; i++) {
+        if(arr[i] > arr[i+1]){
+            swap(arr[i], arr[i+1]);
+        }
+    }
+
+    //Recursive Call
+    sortArray(arr, n-1);
+
+}
+
+int main() {
+
+    int arr[5] = {2,5,1,6,9};
+    
+    sortArray(arr,5);
+
+    for(int i=0; i<5; i++) {
+        cout << arr[i] << " ";
+    }cout << endl;
+
+
+    return 0;
+}
+
+=================================merge sort=====================================
+#include<iostream>
+using namespace std;
+
+void merge(int *arr, int s, int e) {
+
+    int mid = (s+e)/2;
+
+    int len1 = mid - s + 1;
+    int len2 = e - mid;
+
+    int *first = new int[len1];
+    int *second = new int[len2];
+
+    //copy values
+    int mainArrayIndex = s;
+    for(int i=0; i<len1; i++) {
+        first[i] = arr[mainArrayIndex++];
+    }
+
+    mainArrayIndex = mid+1;
+    for(int i=0; i<len2; i++) {
+        second[i] = arr[mainArrayIndex++];
+    }
+
+    //merge 2 sorted arrays     
+    int index1 = 0;
+    int index2 = 0;
+    mainArrayIndex = s;
+
+    while(index1 < len1 && index2 < len2) {
+        if(first[index1] < second[index2]) {
+            arr[mainArrayIndex++] = first[index1++];
+        }
+        else{
+            arr[mainArrayIndex++] = second[index2++];
+        }
+    }   
+
+    while(index1 < len1) {
+        arr[mainArrayIndex++] = first[index1++];
+    }
+
+    while(index2 < len2 ) {
+        arr[mainArrayIndex++] = second[index2++];
+    }
+
+    delete []first;
+    delete []second;
+
+}
+
+void mergeSort(int *arr, int s, int e) {
+
+    //base case
+    if(s >= e) {
+        return;
+    }
+    
+    int mid = (s+e)/2;
+
+    //left part sort karna h 
+    mergeSort(arr, s, mid);
+    
+    //right part sort karna h 
+    mergeSort(arr, mid+1, e);
+
+    //merge
+    merge(arr, s, e);
+
+}
+
+int main() {
+
+    int arr[15] = {3,7,0,1,5,8,3,2,34,66,87,23,12,12,12};
+    int n = 15;
+
+    mergeSort(arr, 0, n-1);
+
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    } cout << endl;
+
+    return 0;
+}
+========================================quick short using recursion==========================================
+
+#include<iostream>
+using namespace std;
+int partition(int arr[],int s, int e){
+    int pivot=arr[s];
+    int cnt=0;
+    for(int i=s+1;i<=e;i++){
+        if(arr[i]<=pivot){
+            cnt++;
+        }
+        
+    }
+    //place pivot at right position'
+    int pivotIndex=s+cnt;
+    swap(arr[pivotIndex],arr[s]);
+    
+    //left and right wala part smbhal lete hai
+    int i=s,j=e;
+    while(i<pivotIndex&&j>pivotIndex){
+        while(arr[i]<=pivot)
+        {
+            i++;
+        }
+        while(arr[j]>pivot){
+            j--;
+        }
+        if(i<pivotIndex&&j>pivotIndex){
+            swap(arr[i++],arr[j--]);
+        }
+    }
+    return pivotIndex;
+}
+
+void quickSort(int arr[],int s, int e){
+    //base case
+    if(s>=e)
+    return;
+    //partion karenge
+    int p=partition(arr,s,e);
+    //left part sort karo
+    quickSort(arr,s,p-1);
+    //right part sort karo
+    quickSort(arr,p+1,e);
+}
+int main(){
+    int arr[10]={2,4,1,6,9,9,9,9,9};
+    int n=10;
+    quickSort(arr,0,n-1);
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+        
+    }cout<<endl;
+    return 0;
+}
+
+==================subseques of string- code studio=================================
+
+void solve(vector<string>& ans, string str, string output, int i) {
+    //base case
+    if(i>=str.length()) {
+        if(output.length()>0)
+        ans.push_back(output);
+        return ;
+        }
+    
+    //exclude
+    solve(ans, str, output, i+1);
+    //include
+    output.push_back(str[i]);
+    solve(ans, str, output, i+1);
+}
+
+vector<string> subsequences(string str){
+	
+	vector<string> ans;
+    string output = "";
+    solve(ans,str,output,0);
+    return ans;
+	
+}
+
+
+
+==============================rat in a maze problem================================
+class Solution{
+    private:
+    bool isSafe(int x,int y,int n,vector<vector<int>>visited,vector<vector<int>> &m){
+        if((x>=0 && x<n)&&(y>=0 && y<n) && visited[x][y]==0 && m[x][y]==1){
+            return true;
+            
+        }
+        else{
+            return false;
+        }
+    }
+    void solve(vector<vector<int>> &m,int n,vector<string>& ans,int x, int y,
+    vector<vector<int>>visited,string path){
+        //you have reached x and y here
+        //base case
+        if(x==n-1&&y==n-1){
+            ans.push_back(path); 
+            return;
+            
+        }
+        visited[x][y]=1;
+        //4 choice
+        //down
+        int newx=x+1;
+        int newy=y;
+        if(isSafe(newx,newy,n,visited,m)){
+            path.push_back('D');
+            solve(m,n,ans,newx,newy,visited,path);
+            path.pop_back();
+        }
+        //left
+          newx=x;
+        newy=y-1;
+        if(isSafe(newx,newy,n,visited,m)){
+            path.push_back('L');
+            solve(m,n,ans,newx,newy,visited,path);
+            path.pop_back();
+        }
+        //right
+           newx=x;
+        newy=y+1;
+        if(isSafe(newx,newy,n,visited,m)){
+            path.push_back('R');
+            solve(m,n,ans,newx,newy,visited,path);
+            path.pop_back();
+        }
+        
+        
+        //UP
+          newx=x-1;
+         newy=y;
+        if(isSafe(newx,newy,n,visited,m)){
+            path.push_back('U');
+            solve(m,n,ans,newx,newy,visited,path);
+            path.pop_back();
+        }
+        
+        
+        
+        
+        
+         visited[x][y]=0;
+        
+    }
+    public:
+    vector<string> findPath(vector<vector<int>> &m, int n) {
+        // Your code goes here
+        vector<string>ans;
+        if(m[0][0]==0){
+            return ans;
+        }
+        int srcx=0;
+        int srcy=0;
+        vector<vector<int>> visited=m;
+        //initialisation with 0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                visited[i][j]=0;
+            }
+        }
+        string path="";
+        solve(m,n,ans,srcx,srcy,visited,path);
+        return ans;
+        
+    }
+};
+
+
+*************************************************************
+*/
+
+
+
+
+-sj----------------------------------dddddddddddddddddddddd-----------------------------------------------d---------------------------------------------------------------------------------
+=====================================================================================Homeworks===================================================
+#include<iostream>
+using namespace std;
+int main(){
+    char ch;
+    cout<<"Enter the value ";
+    cin>>ch;
+   
+   
+    if((ch>'0')&&(ch<'9')){
+       cout<<"This is numeric";
+    }
+    else if((ch>'A')&&(ch<'Z')){
+        cout<<"This is uppercase";
+    }
+    else if((ch>'a')&&(ch<'z')){
+        cout<<"This is lowercase";
+    }
+    
+}
+====================================
+
+#include<iostream>
+using namespace std;
+int main(){
+    int sum=0;
+    for(int i=0;i<=100;i++){
+        if(i%2==0){
+            sum=sum+i;
+            
+        }
+        
+    }
+    cout<<"The sum is "<<sum<<endl;
+}
+
+======================================
+#include<iostream>
+using namespace std;
+int main(){
+       int n;
+  cin>>n;
+  
+  int row=1;
+  while(row<=n){
+  int space=n-row;
+  while(space){
+     cout<<" ";
+     space=space-1;
+  }
+  
+  int j=1;
+  while(j<=row){
+      cout<<row;
+     ;
+      j=j+1;
+  
+      }
+      cout<<endl;
+      row=row+1;
+  }
+}
+===================================
+#include<iostream>
+using namespace std;
+int main(){
+       int n;
+  cin>>n;
+  int value=1;
+  
+  int row=1;
+  while(row<=n){
+  int space=n-row;
+  while(space){
+     cout<<" ";
+     space=space-1;
+  }
+  
+  int j=1;
+  while(j<=row){
+      cout<<value;
+     value=value+1;
+      j=j+1;
+  
+      }
+      cout<<endl;
+      row=row+1;
+  }
+}
+============================
+Dabang problem--
+using namespace std;
+
+int main () {
+  int n;
+  cin>>n;
+  int i = 1;
+  while(i<=n) {
+
+    //1st triangle(12345)
+
+    int j = 1;
+    while(j<=n-i+1) {
+      cout<<j;
+      j= j+1;
+    }
+    
+    //2nd triangle (star)
+
+    int star = i -1;
+    while(star) {
+      cout<< "*";
+      star = star - 1;
+    }
+
+    //3rd triangle (star)
+
+    int star2 = i -1;
+    while(star2) {
+      cout<< "*";
+      star2 = star2 - 1;
+    }
+
+    //4th triangle (54321)
+
+    int j2 = n-i+1;
+    while(j2) {
+      cout<<j2;
+      j2= j2-1;
+    }
+
+    cout<<endl;
+    i = i +1;
+  }
+}
+
+
+=====================
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+  int i =1;
+  cin>>n;
+  while(i<=n){ 
+    int space=i-1;
+    while (space){
+      cout<<" ";
+      space=space-1;
+    }
+    int j=n-i+1;
+    while (j){
+      cout<<i;
+       j-=1;
+    }
+    cout<<endl;
+    i+=1;
+  }
+return 0;
+}
+====================================================function home work Solution=======================================================
+
+---AP Problem---------
+
+#include<iostream>
+using namespace std;
+int arithmeticPro(int n){
+    int p=(3*n)+7;
+    return p;
+}
+int main(){
+    int n;
+    cin>>n;
+   int q= arithmeticPro(n);
+   cout<<"nth term of AP is "<<q<<endl;
+}
+
+
+
+    
+
+
