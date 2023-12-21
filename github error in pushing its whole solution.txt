@@ -1,0 +1,126 @@
+
+
+Initial steps ===============
+
+PS C:\Users\91878\Desktop\c++ programming> git status
+On branch main
+  (use "git add <file>..." to include in what will be committed)
+        git status
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\91878\Desktop\c++ programming> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\91878\Desktop\c++ programming> git pull origin main
+From https://github.com/Nitish63395/DSA-Whole-Concepts-and-Questions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\91878\Desktop\c++ programming> git commit -m "Merge  changes"      
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\91878\Desktop\c++ programming> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nitish63395/DSA-Whole-Concepts-and-Questions.git
+   7926a29..2768cac  main -> main
+PS C:\Users\91878\Desktop\c++ programming> 
+ *  History restored 
+
+PS C:\Users\91878\Desktop\c++ programming> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+then error resolving by below.
+
+
+
+
+
+
+PS C:\Users\91878\Desktop\c++ programming> git remote add origin https://github.com/Nitish63395/DSA-Whole-Concepts-and-Questions.git
+error: remote origin already exists.
+PS C:\Users\91878\Desktop\c++ programming> git push -u origin main  
+To https://github.com/Nitish63395/DSA-Whole-Concepts-and-Questions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Nitish63395/DSA-Whole-Concepts-and-Questions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\91878\Desktop\c++ programming> 
+ChatGPT
+The error message is indicating that the remote repository has changes that you don't have in your local repository, and it's asking you to integrate those changes before pushing again.
+
+Here's what you can do:
+
+Pull Changes from Remote:
+First, pull the changes from the remote repository to your local repository. Use the following command:
+
+bash
+Copy code
+-------------------
+git pull origin main
+-------------------
+
+This will fetch the changes from the remote repository and merge them into your local branch.
+
+Resolve Conflicts (if any):
+If there are any conflicts during the pull, you'll need to resolve them. Git will indicate which files have conflicts, and you'll need to edit those files to resolve the conflicts.
+
+Commit the Merged Changes:
+After resolving conflicts, if any, commit the changes.
+
+bash
+Copy code
+------------------------
+git commit -m "Merge remote changes"
+---------------------------------
+Push the Changes:
+Now you can push the changes to the remote repository.
+
+bash
+Copy code
+---------------------
+git push origin main
+--------------------
+This should work without any issues.
+
+If you're not concerned about preserving the remote changes and want to overwrite them with your local changes, you can force-push. However, use force-push with caution, especially if you're working with others on the same repository.
+
+Force-Push (Use with caution):
+
+bash
+Copy code
+
+---------------------------
+git push -f origin main
+------------------------
+This command forcefully pushes your local changes to the remote repository, overwriting any changes that may be present in the remote repository. Only use this if you're sure it won't cause conflicts with others working on the same repository.
+
+
+
+
+
+
